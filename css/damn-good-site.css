@@ -3081,7 +3081,6 @@ figcaption {
 
 .protection-overlay {
   opacity: 0;
-  background-color: #fff;
   position: absolute;
   inset: 0%;
 }
@@ -3093,6 +3092,14 @@ figcaption {
 
 .image.mobile {
   display: none;
+}
+
+.body-2 {
+  background-image: url('../images/AdobeStock_492617949.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media screen and (max-width: 991px) {
