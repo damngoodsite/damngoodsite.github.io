@@ -2367,8 +2367,8 @@ figcaption {
   inset: 0%;
 }
 
-.div-block {
-  opacity: .12;
+.preview-wrapper {
+  position: relative;
 }
 
 .step {
@@ -3079,6 +3079,22 @@ figcaption {
   overflow: hidden;
 }
 
+.protection-overlay {
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  inset: 0%;
+}
+
+.image {
+  width: 100%;
+  display: inline-block;
+}
+
+.image.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -3687,6 +3703,28 @@ figcaption {
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
     min-height: auto;
+  }
+
+  .protection-overlay {
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #fff;
+    position: absolute;
+    inset: 0%;
+  }
+
+  .image {
+    pointer-events: none;
+    width: 100%;
+  }
+
+  .image.mobile {
+    display: inline-block;
+  }
+
+  .image.desktop {
+    display: none;
   }
 }
 
